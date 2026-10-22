@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About PaintPro | Our Story, Process and Standards</title>
+<meta name="description" content="Learn how PaintPro works: our story, values, step-by-step painting process and the service standards we follow on every interior, exterior, cabinet and commercial project.">
+<!-- EDIT: replace https://www.your-domain.example/ with your real domain on every page -->
+<link rel="canonical" href="https://www.your-domain.example/about.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About PaintPro | Our Story, Process and Standards">
+<meta property="og:description" content="How PaintPro prepares, paints and finishes every project, and the standards behind the work.">
+<meta property="og:url" content="https://www.your-domain.example/about.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
+
+<style>
+/* ============================================================
+   PaintPro - Shared Stylesheet
+   Palette: white background, deep navy (#0e2a47), orange CTA (#f97316)
+   ============================================================ */
+
+:root {
+  --navy: #0e2a47;
+  --navy-dark: #0a1f36;
+  --orange: #f97316;
+  --orange-dark: #ea580c;
+  --ink: #1c2733;
+  --muted: #51606e;
+  --line: #e3e9ef;
+  --bg-soft: #f4f7fa;
+  --white: #ffffff;
+  --radius: 14px;
+  --shadow: 0 6px 24px rgba(14, 42, 71, 0.10);
+  --shadow-lg: 0 14px 40px rgba(14, 42, 71, 0.16);
+  --max: 1180px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.65;
+  font-size: 17px;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--navy); }
+
+:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--navy);
+  color: #fff;
+  padding: 10px 18px;
+  z-index: 200;
+}
+.skip-link:focus { left: 8px; top: 8px; }
+
+.container { max-width: var(--max); margin: 0 auto; padding: 0 22px; }
+
+section { padding: 72px 0; }
+.section-soft { background: var(--bg-soft); }
+
+.section-head { max-width: 720px; margin: 0 auto 42px; text-align: center; }
+.section-head h2 { font-size: 32px; margin: 0 0 10px; color: var(--navy); line-height: 1.2; }
+.section-head p { color: var(--muted); margin: 0; }
+.eyebrow {
+  display: inline-block; text-transform: uppercase; letter-spacing: 1.6px;
+  font-size: 12.5px; font-weight: 700; color: var(--orange-dark); margin-bottom: 10px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block; font-weight: 700; text-decoration: none;
+  padding: 13px 26px; border-radius: 999px; border: 2px solid transparent;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  cursor: pointer; font-size: 16px;
+}
+.btn:active { transform: translateY(1px); }
+.btn-orange { background: var(--orange); color: var(--navy-dark); }
+.btn-orange:hover { background: var(--orange-dark); color: #fff; }
+.btn-navy { background: var(--navy); color: #fff; }
+.btn-navy:hover { background: var(--navy-dark); }
+.btn-outline { background: transparent; color: var(--navy); border-color: var(--navy); }
+.btn-outline:hover { background: var(--navy); color: #fff; }
+.btn-white { background: #fff; color: var(--navy); }
+.btn-white:hover { background: var(--bg-soft); }
+
+/* ---------- Header / Nav ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.97);
+  border-bottom: 1px solid var(--line);
+}
+.header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; padding-top: 14px; padding-bottom: 14px;
+}
+.logo {
+  font-size: 25px; font-weight: 800; color: var(--navy); text-decoration: none;
+  display: inline-flex; align-items: center; gap: 9px;
+}
+.logo .logo-mark {
+  width: 34px; height: 34px; border-radius: 9px; background: var(--orange);
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--navy-dark); font-size: 18px; font-weight: 900;
+}
+.logo em { color: var(--orange-dark); font-style: normal; }
+.main-nav ul {
+  list-style: none; display: flex; gap: 28px; margin: 0; padding: 0; align-items: center;
+}
+.main-nav a {
+  text-decoration: none; font-weight: 600; color: var(--ink); padding: 6px 2px;
+}
+.main-nav a:hover { color: var(--orange-dark); }
+.main-nav a[aria-current="page"] { color: var(--navy); border-bottom: 3px solid var(--orange); }
+.nav-toggle {
+  display: none; background: var(--navy); color: #fff; border: 0; border-radius: 9px;
+  padding: 10px 14px; font-size: 16px; font-weight: 700; cursor: pointer;
+}
+
+/* ---------- Hero ---------- */
+.hero { background: var(--navy); color: #fff; padding: 0; }
+.hero-grid {
+  display: grid; grid-template-columns: 1.05fr 1fr; gap: 44px; align-items: center;
+  padding: 64px 22px;
+}
+.hero h1 { font-size: 42px; line-height: 1.15; margin: 0 0 16px; }
+.hero h1 .accent { color: var(--orange); }
+.hero p { color: #d5e0ec; font-size: 18.5px; margin: 0 0 26px; max-width: 34em; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero-points { list-style: none; padding: 0; margin: 26px 0 0; display: flex; gap: 22px; flex-wrap: wrap; color: #d5e0ec; font-size: 15px; }
+.hero-points li::before { content: "\2713"; color: var(--orange); font-weight: 900; margin-right: 7px; }
+.hero img { border-radius: var(--radius); box-shadow: var(--shadow-lg); width: 100%; height: 100%; object-fit: cover; min-height: 320px; }
+
+/* ---------- Page hero (About / Contact) ---------- */
+.page-hero { background: var(--navy); color: #fff; padding: 56px 0; }
+.page-hero h1 { font-size: 36px; margin: 0 0 10px; line-height: 1.2; }
+.page-hero p { color: #d5e0ec; margin: 0; max-width: 46em; }
+
+/* ---------- Service cards ---------- */
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+.card {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column;
+}
+.card img { height: 170px; width: 100%; object-fit: cover; }
+.card-body { padding: 20px 20px 24px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.card h3 { margin: 0; font-size: 20px; color: var(--navy); }
+.card p { margin: 0; color: var(--muted); font-size: 15.5px; flex: 1; }
+.card a.card-link { font-weight: 700; color: var(--orange-dark); text-decoration: none; }
+.card a.card-link:hover { text-decoration: underline; }
+
+/* ---------- Why choose us ---------- */
+.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.why-item { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow); }
+.why-item .icon {
+  width: 48px; height: 48px; border-radius: 12px; background: var(--bg-soft);
+  display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 14px;
+}
+.why-item h3 { margin: 0 0 6px; font-size: 19px; color: var(--navy); }
+.why-item p { margin: 0; color: var(--muted); font-size: 15.5px; }
+
+/* ---------- Gallery ---------- */
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.gallery figure { margin: 0; border-radius: var(--radius); overflow: hidden; position: relative; box-shadow: var(--shadow); }
+.gallery img { height: 240px; width: 100%; object-fit: cover; }
+.gallery figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(transparent, rgba(10,31,54,0.88));
+  color: #fff; padding: 28px 16px 12px; font-size: 15px; font-weight: 600;
+}
+
+/* ---------- Testimonials ---------- */
+.testimonials { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.testimonial {
+  background: #fff; border: 1px dashed #b9c6d2; border-radius: var(--radius);
+  padding: 24px; color: var(--muted);
+}
+.testimonial .stars { color: var(--orange); letter-spacing: 3px; font-size: 18px; }
+.testimonial blockquote { margin: 10px 0; font-style: italic; }
+.sample-note { text-align: center; color: var(--muted); font-size: 14px; margin-top: 18px; }
+
+/* ---------- FAQ ---------- */
+.faq { max-width: 800px; margin: 0 auto; }
+.faq-item { border: 1px solid var(--line); border-radius: var(--radius); margin-bottom: 12px; background: #fff; overflow: hidden; }
+.faq-q {
+  width: 100%; text-align: left; background: none; border: 0; cursor: pointer;
+  padding: 18px 20px; font-size: 17px; font-weight: 700; color: var(--navy);
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  font-family: inherit;
+}
+.faq-q .faq-icon { color: var(--orange-dark); font-size: 22px; line-height: 1; }
+.faq-a { padding: 0 20px 18px; color: var(--muted); }
+.faq-a p { margin: 0; }
+.faq-a[hidden] { display: none; }
+
+/* ---------- CTA band ---------- */
+.cta-band { background: var(--navy); color: #fff; text-align: center; }
+.cta-band h2 { color: #fff; font-size: 30px; margin: 0 0 10px; }
+.cta-band p { color: #d5e0ec; margin: 0 auto 24px; max-width: 40em; }
+
+/* ---------- About page ---------- */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center; }
+.two-col img { border-radius: var(--radius); box-shadow: var(--shadow); }
+.values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.process-list { counter-reset: step; list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.process-list li {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 22px 22px 22px 76px; position: relative; box-shadow: var(--shadow);
+}
+.process-list li::before {
+  counter-increment: step; content: counter(step);
+  position: absolute; left: 20px; top: 20px;
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--orange); color: var(--navy-dark);
+  font-weight: 800; display: flex; align-items: center; justify-content: center;
+}
+.process-list h3 { margin: 0 0 5px; font-size: 18px; color: var(--navy); }
+.process-list p { margin: 0; color: var(--muted); font-size: 15.5px; }
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+.team-member { text-align: center; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 16px; box-shadow: var(--shadow); }
+.team-member .avatar {
+  width: 84px; height: 84px; border-radius: 50%; margin: 0 auto 14px;
+  background: var(--bg-soft); border: 2px dashed #b9c6d2; color: var(--muted);
+  display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700;
+}
+.team-member h3 { margin: 0 0 2px; font-size: 17px; color: var(--navy); }
+.team-member p { margin: 0; color: var(--muted); font-size: 14.5px; }
+.standards { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 28px; }
+.standards li { padding-left: 30px; position: relative; }
+.standards li::before { content: "\2713"; position: absolute; left: 0; color: var(--orange-dark); font-weight: 900; }
+
+/* ---------- Contact page ---------- */
+.contact-grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: 40px; align-items: start; }
+.contact-card { background: var(--bg-soft); border-radius: var(--radius); padding: 26px; margin-bottom: 22px; }
+.contact-card h2, .contact-card h3 { color: var(--navy); margin-top: 0; }
+.contact-card ul { list-style: none; padding: 0; margin: 0; }
+.contact-card li { margin-bottom: 12px; }
+.contact-card .label { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); font-weight: 700; }
+.contact-card a { font-weight: 700; font-size: 18px; }
+.area-tags span { display: inline-block; background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 4px 13px; margin: 3px 2px; font-size: 14.5px; }
+
+form.quote-form { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field { margin-bottom: 16px; }
+.field label { display: block; font-weight: 700; margin-bottom: 6px; color: var(--navy); font-size: 15px; }
+.field input, .field select, .field textarea {
+  width: 100%; padding: 12px 13px; border: 1.5px solid #c3cfda; border-radius: 9px;
+  font: inherit; font-size: 16px; background: #fff; color: var(--ink);
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  border-color: var(--orange); outline: 3px solid rgba(249,115,22,0.35); outline-offset: 0;
+}
+.form-note { font-size: 14px; color: var(--muted); background: #fff7ed; border: 1px solid #fed7aa; border-radius: 9px; padding: 12px 14px; margin-bottom: 18px; }
+.form-status { margin-top: 16px; font-weight: 600; }
+.form-status.error { color: #b91c1c; }
+.form-status.ok { color: #166534; }
+
+/* ---------- Footer ---------- */
+.site-footer { background: var(--navy-dark); color: #c9d6e4; padding: 52px 0 26px; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 36px; margin-bottom: 34px; }
+.site-footer h3 { color: #fff; margin: 0 0 12px; font-size: 17px; }
+.site-footer ul { list-style: none; padding: 0; margin: 0; }
+.site-footer li { margin-bottom: 8px; }
+.site-footer a { color: #c9d6e4; text-decoration: none; }
+.site-footer a:hover { color: var(--orange); text-decoration: underline; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.15); padding-top: 20px; font-size: 14px; display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1020px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .why-grid, .values-grid, .testimonials { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero img { min-height: 260px; }
+}
+@media (max-width: 720px) {
+  body { font-size: 16px; }
+  section { padding: 52px 0; }
+  .nav-toggle { display: inline-block; }
+  .main-nav {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    background: #fff; border-bottom: 1px solid var(--line); box-shadow: var(--shadow);
+  }
+  .main-nav.open { display: block; }
+  .main-nav ul { flex-direction: column; align-items: stretch; gap: 0; padding: 10px 22px 16px; }
+  .main-nav li { border-bottom: 1px solid var(--line); }
+  .main-nav li:last-child { border-bottom: 0; }
+  .main-nav a { display: block; padding: 12px 2px; }
+  .main-nav a.btn { text-align: center; margin-top: 10px; }
+  .site-header .container { position: relative; }
+  .cards, .why-grid, .values-grid, .testimonials, .gallery, .team-grid,
+  .process-list, .standards, .contact-grid, .two-col, .form-row, .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 { font-size: 33px; }
+  .hero-grid { padding: 44px 22px; }
+  .gallery img { height: 210px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
+}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="PaintPro home">
+      <span class="logo-mark" aria-hidden="true">P</span>Paint<em>Pro</em>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+        <li><a class="btn btn-orange" href="tel:+12135550184">Call Now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" aria-label="About PaintPro">
+    <div class="container">
+      <h1>About PaintPro</h1>
+      <p>A painting company built on a simple idea: good paint work is mostly preparation, patience and honest communication.</p>
+    </div>
+  </section>
+
+  <!-- Company story -->
+  <section aria-labelledby="story-heading">
+    <div class="container two-col">
+      <div>
+        <span class="eyebrow">Our story</span>
+        <h2 id="story-heading" style="color:var(--navy); margin-top:0;">How PaintPro Started</h2>
+        <!-- EDIT: replace this placeholder story with your real company story -->
+        <p>PaintPro began as a small crew handling interior repaints for local homeowners. Most of the jobs we were called to fix had the same problem: the paint itself was fine, but the preparation underneath had been rushed or skipped entirely.</p>
+        <p>So we built our process around the unglamorous parts first: washing, scraping, sanding, patching, caulking and priming. Only when the surface is right does the finish coat go on. That approach takes a little longer at the start of a job and saves our customers from repainting again a few years later.</p>
+        <p>Today we handle interior and exterior painting for homes, cabinet refinishing, and commercial projects of different sizes, all run on the same standards described on this page.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop"
+           alt="Painting and renovation crew at work on a building project" loading="lazy" width="1200" height="900">
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section-soft" aria-labelledby="values-heading">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What guides us</span>
+        <h2 id="values-heading">Our Values</h2>
+      </div>
+      <div class="values-grid">
+        <div class="why-item">
+          <h3>Do the prep properly</h3>
+          <p>A finish is only as good as the surface under it. We never paint over loose, dirty or damaged surfaces just to finish faster.</p>
+        </div>
+        <div class="why-item">
+          <h3>Say it straight</h3>
+          <p>If we find rot, moisture or damage that changes the job, we tell you before we paint over it, with options and honest pricing.</p>
+        </div>
+        <div class="why-item">
+          <h3>Respect the property</h3>
+          <p>We mask, cover and protect floors, furniture, fixtures and landscaping, and we leave every site clean at the end of the day.</p>
+        </div>
+        <div class="why-item">
+          <h3>Use the right product</h3>
+          <p>Primer and paint choices are matched to the surface, the room and the weather the coating will face, not chosen by habit.</p>
+        </div>
+        <div class="why-item">
+          <h3>Finish what we start</h3>
+          <p>Every project ends with a joint walkthrough. Touch-ups we agree on are completed before the job is closed.</p>
+        </div>
+        <div class="why-item">
+          <h3>Keep learning</h3>
+          <p>Coatings and tools change. We test new products on real surfaces first and only use them on customer projects once proven.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section aria-labelledby="process-heading">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How we work</span>
+        <h2 id="process-heading">Our Painting Process</h2>
+        <p>The same six steps on every project, so you always know what happens next.</p>
+      </div>
+      <ol class="process-list">
+        <li>
+          <h3>Consultation and quote</h3>
+          <p>We look at the project with you, measure the surfaces, discuss colors and products, and send a written quote with the scope clearly listed.</p>
+        </li>
+        <li>
+          <h3>Scheduling and colors</h3>
+          <p>We agree on dates, confirm final colors with sample patches where needed, and order materials before the start date.</p>
+        </li>
+        <li>
+          <h3>Protection and preparation</h3>
+          <p>Furniture and floors are covered, surfaces are washed, scraped, sanded, patched, caulked and primed as required.</p>
+        </li>
+        <li>
+          <h3>Painting</h3>
+          <p>Finish coats are applied in the number agreed in your quote, with drying time respected between coats.</p>
+        </li>
+        <li>
+          <h3>Inspection and touch-ups</h3>
+          <p>We inspect the work in good light, mark any spots together with you and complete the touch-ups.</p>
+        </li>
+        <li>
+          <h3>Cleanup and walkthrough</h3>
+          <p>Masking comes off, the site is cleaned, leftover paint is labeled for you, and we do a final walkthrough together.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Team (placeholders) -->
+  <section class="section-soft" aria-labelledby="team-heading">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">The crew</span>
+        <h2 id="team-heading">Meet the Team</h2>
+        <p>Team details are placeholders. Add real names, roles and photos of your own crew here.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="avatar" aria-hidden="true">Photo</div>
+          <h3>Team Member Name</h3>
+          <p>Founder / Lead Painter (placeholder)</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar" aria-hidden="true">Photo</div>
+          <h3>Team Member Name</h3>
+          <p>Project Manager (placeholder)</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar" aria-hidden="true">Photo</div>
+          <h3>Team Member Name</h3>
+          <p>Surface Prep Specialist (placeholder)</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar" aria-hidden="true">Photo</div>
+          <h3>Team Member Name</h3>
+          <p>Cabinet Finishing Specialist (placeholder)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service standards -->
+  <section aria-labelledby="standards-heading">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Our promise</span>
+        <h2 id="standards-heading">Service Standards</h2>
+      </div>
+      <ul class="standards">
+        <li>Written quote before work begins, with scope, products and number of coats listed</li>
+        <li>Surfaces washed, scraped, sanded, patched and primed as needed before painting</li>
+        <li>Floors, furniture, fixtures and landscaping protected on every job</li>
+        <li>Work areas tidied at the end of each day, not only at the end of the project</li>
+        <li>Lead-safe practices followed on older properties where lead paint may be present</li>
+        <li>Final walkthrough with the customer and agreed touch-ups completed before closing</li>
+        <li>Leftover paint labeled and left with the customer for future touch-ups</li>
+        <li>Honest advice if a surface needs repair or replacement instead of paint</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band" aria-label="Call to action">
+    <div class="container">
+      <h2>Have a project in mind?</h2>
+      <p>Tell us about it and get a clear written quote for your interior, exterior, cabinet or commercial painting project.</p>
+      
+      <a class="btn btn-orange" href="tel:+12135550184">Call Now</a>
+      <a class="btn btn-white" href="contact.html">Get a Free Quote</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>PaintPro</h3>
+        <p>Interior, exterior, cabinet and commercial painting with careful preparation and clean finishes.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          
+          <li>Phone: <a href="tel:+12135550184">(213) 555-0184</a></li>
+          <li>Email: <a href="mailto:info@paintpro.com">info@paintpro.com</a></li>
+          <li>Address: 789 W Olympic Blvd, Los Angeles, CA 90015</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> PaintPro. All rights reserved.</span>
+      <span>Interior &middot; Exterior &middot; Cabinet &middot; Commercial</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* PaintPro - shared JavaScript (vanilla, no dependencies) */
+(function () {
+  "use strict";
+
+  /* ---------- Footer year ---------- */
+  var yearEl = document.getElementById("year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
+  /* ---------- Mobile navigation ---------- */
+  var toggle = document.querySelector(".nav-toggle");
+  var nav = document.getElementById("main-nav");
+
+  if (toggle && nav) {
+    function closeNav() {
+      nav.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open menu");
+    }
+    function openNav() {
+      nav.classList.add("open");
+      toggle.setAttribute("aria-expanded", "true");
+      toggle.setAttribute("aria-label", "Close menu");
+    }
+    toggle.addEventListener("click", function () {
+      if (nav.classList.contains("open")) { closeNav(); } else { openNav(); }
+    });
+    /* Close on Escape and return focus to the toggle */
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && nav.classList.contains("open")) {
+        closeNav();
+        toggle.focus();
+      }
+    });
+    /* Close after choosing a link (mobile) */
+    nav.addEventListener("click", function (e) {
+      if (e.target.closest("a") && window.innerWidth <= 720) { closeNav(); }
+    });
+  }
+
+  /* ---------- FAQ accordion (Home page) ---------- */
+  var faqButtons = document.querySelectorAll(".faq-q");
+  faqButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var answer = btn.closest(".faq-item").querySelector(".faq-a");
+      var icon = btn.querySelector(".faq-icon");
+      var isOpen = btn.getAttribute("aria-expanded") === "true";
+
+      /* Close all items first */
+      faqButtons.forEach(function (other) {
+        other.setAttribute("aria-expanded", "false");
+        var otherAnswer = other.closest(".faq-item").querySelector(".faq-a");
+        if (otherAnswer) { otherAnswer.hidden = true; }
+        var otherIcon = other.querySelector(".faq-icon");
+        if (otherIcon) { otherIcon.textContent = "+"; }
+      });
+
+      /* Open the clicked one if it was closed */
+      if (!isOpen) {
+        btn.setAttribute("aria-expanded", "true");
+        if (answer) { answer.hidden = false; }
+        if (icon) { icon.textContent = "\u2212"; }
+      }
+    });
+  });
+
+  /* ---------- Quote form (Contact page) ----------
+     IMPORTANT: This is a static site. There is no server to receive the form.
+     The handler below validates the fields and tells the visitor the form is
+     not connected yet, instead of pretending the message was sent.
+
+     To make the form really work, pick ONE option and follow the README:
+       1) Formspree: set the form action to https://formspree.io/f/YOUR_ID
+          and remove this submit handler.
+       2) Netlify Forms: add netlify attribute to the <form> tag and deploy on Netlify.
+       3) Your own backend or Cloudflare Worker endpoint: post the data there.
+  ------------------------------------------------- */
+  var form = document.getElementById("quote-form");
+  if (form) {
+    var status = document.getElementById("form-status");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      var name = document.getElementById("f-name").value.trim();
+      var phone = document.getElementById("f-phone").value.trim();
+      var email = document.getElementById("f-email").value.trim();
+      var service = document.getElementById("f-service").value;
+      var message = document.getElementById("f-message").value.trim();
+
+      status.className = "form-status error";
+
+      if (!name || !phone || !email || !service || !message) {
+        status.textContent = "Please fill in all required fields before sending.";
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        status.textContent = "Please enter a valid email address.";
+        return;
+      }
+
+      status.className = "form-status ok";
+      status.textContent =
+        "Thank you, " + name + ". This demo form is not connected to a mailbox yet, " +
+        "so your message has NOT been sent. Please call us or email us directly, " +
+        "or connect a form service as described in the README file.";
+    });
+  }
+})();
+
+</script>
+</body>
+</html>
